@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -308,6 +312,32 @@ header .header-cover nav ul li a {
 }
 /* contact-sec */
 
+/* cart sec */
+.cart-box .cart-items {
+  padding-left: 0px;
+  /* margin-bottom: 0px; */
+}
+.cart-box .cart-items li {
+  border-top: 1px solid #dfe2e1;
+}
+.cart-box .cart-items li:last-child {
+  border-bottom: 1px solid #dfe2e1;
+}
+.cart-box .cart-items .list-name a {
+  color: #000;
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+.cart-box .cart-items .list-name .remove-item {
+  display: flex;
+  font-size: 0.8rem;
+  gap: 4px;
+  align-items: center;
+}
+.cart-box .cart-items .item-price {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 .summary-box {
   border: 1px solid #dfe2e1;
   border-radius: 10px;
