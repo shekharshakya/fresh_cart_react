@@ -11,13 +11,17 @@ const Product = () => {
             <div className="col-lg-9">
               <div className="product-top-header">
                 <div className="total-products">
-                  <p class="mb-0">
-                    <span class="text-dark">24 </span> Products found
+                  <p className="mb-0">
+                    <span className="text-dark">24 </span> Products found
                   </p>
                 </div>
                 <div className="right-box">
+                  <div className="product-grid-list">
+                  <i className="fa-solid fa-list"></i>
+                  <i className="fa-sharp fa-regular fa-grid-round-4"></i>
+                  </div>
                   <div className="sort-product">
-                    <select class="form-select">
+                    <select className="form-select">
                       <option selected>Sort by: Featured</option>
                       <option value="Low to High">Price: Low to High</option>
                       <option value="High to Low"> Price: High to Low</option>

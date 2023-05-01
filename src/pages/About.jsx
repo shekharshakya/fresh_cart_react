@@ -29,7 +29,7 @@ const About = () => {
       <section className="sec-padding cp-l cp-r">
         <div className="container">
           <div className="lp rp">
-            <h2 class="title">Ready to get started?</h2>
+            <h2 className="title">Ready to get started?</h2>
             <div className="row">
               <div className="col-lg-4">
                 <div className="h-100 py-3">

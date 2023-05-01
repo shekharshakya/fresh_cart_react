@@ -22,7 +22,7 @@ const Cart = () => {
                       <div className="col-lg-5">
                         <div className="list-name">
                           <Link to="">Haldiram's Sev Bhujia</Link>
-                          <div class="remove-item">
+                          <div className="remove-item">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="14"
@@ -33,7 +33,7 @@ const Cart = () => {
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              class="feather feather-trash-2 text-success"
+                              className="feather feather-trash-2 text-success"
                             >
                               <polyline points="3 6 5 6 21 6"></polyline>
                               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -45,12 +45,12 @@ const Cart = () => {
                         </div>
                       </div>
                       <div className="col-lg-3">
-                        <div class="qty">
-                          <button type="button" class="qty-btn">
+                        <div className="qty">
+                          <button type="button" className="qty-btn">
                             -
                           </button>
-                          <span class="qty-number">3</span>
-                          <button type="button" class="qty-btn">
+                          <span className="qty-number">3</span>
+                          <button type="button" className="qty-btn">
                             +
                           </button>
                         </div>
@@ -70,7 +70,7 @@ const Cart = () => {
                       <div className="col-lg-5">
                         <div className="list-name">
                           <Link to="">Haldiram's Sev Bhujia</Link>
-                          <div class="remove-item">
+                          <div className="remove-item">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="14"
@@ -81,7 +81,7 @@ const Cart = () => {
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              class="feather feather-trash-2 text-success"
+                              className="feather feather-trash-2 text-success"
                             >
                               <polyline points="3 6 5 6 21 6"></polyline>
                               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -93,12 +93,12 @@ const Cart = () => {
                         </div>
                       </div>
                       <div className="col-lg-3">
-                        <div class="qty">
-                          <button type="button" class="qty-btn">
+                        <div className="qty">
+                          <button type="button" className="qty-btn">
                             -
                           </button>
-                          <span class="qty-number">3</span>
-                          <button type="button" class="qty-btn">
+                          <span className="qty-number">3</span>
+                          <button type="button" className="qty-btn">
                             +
                           </button>
                         </div>
@@ -118,7 +118,7 @@ const Cart = () => {
                       <div className="col-lg-5">
                         <div className="list-name">
                           <Link to="">Haldiram's Sev Bhujia</Link>
-                          <div class="remove-item">
+                          <div className="remove-item">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="14"
@@ -129,7 +129,7 @@ const Cart = () => {
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              class="feather feather-trash-2 text-success"
+                              className="feather feather-trash-2 text-success"
                             >
                               <polyline points="3 6 5 6 21 6"></polyline>
                               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -141,12 +141,12 @@ const Cart = () => {
                         </div>
                       </div>
                       <div className="col-lg-3">
-                        <div class="qty">
-                          <button type="button" class="qty-btn">
+                        <div className="qty">
+                          <button type="button" className="qty-btn">
                             -
                           </button>
-                          <span class="qty-number">3</span>
-                          <button type="button" class="qty-btn">
+                          <span className="qty-number">3</span>
+                          <button type="button" className="qty-btn">
                             +
                           </button>
                         </div>
@@ -166,7 +166,7 @@ const Cart = () => {
                       <div className="col-lg-5">
                         <div className="list-name">
                           <Link to="">Haldiram's Sev Bhujia</Link>
-                          <div class="remove-item">
+                          <div className="remove-item">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="14"
@@ -177,7 +177,7 @@ const Cart = () => {
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              class="feather feather-trash-2 text-success"
+                              className="feather feather-trash-2 text-success"
                             >
                               <polyline points="3 6 5 6 21 6"></polyline>
                               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -189,12 +189,12 @@ const Cart = () => {
                         </div>
                       </div>
                       <div className="col-lg-3">
-                        <div class="qty">
-                          <button type="button" class="qty-btn">
+                        <div className="qty">
+                          <button type="button" className="qty-btn">
                             -
                           </button>
-                          <span class="qty-number">3</span>
-                          <button type="button" class="qty-btn">
+                          <span className="qty-number">3</span>
+                          <button type="button" className="qty-btn">
                             +
                           </button>
                         </div>
@@ -214,7 +214,7 @@ const Cart = () => {
                       <div className="col-lg-5">
                         <div className="list-name">
                           <Link to="">Haldiram's Sev Bhujia</Link>
-                          <div class="remove-item">
+                          <div className="remove-item">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="14"
@@ -225,7 +225,7 @@ const Cart = () => {
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              class="feather feather-trash-2 text-success"
+                              className="feather feather-trash-2 text-success"
                             >
                               <polyline points="3 6 5 6 21 6"></polyline>
                               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -237,12 +237,12 @@ const Cart = () => {
                         </div>
                       </div>
                       <div className="col-lg-3">
-                        <div class="qty">
-                          <button type="button" class="qty-btn">
+                        <div className="qty">
+                          <button type="button" className="qty-btn">
                             -
                           </button>
-                          <span class="qty-number">3</span>
-                          <button type="button" class="qty-btn">
+                          <span className="qty-number">3</span>
+                          <button type="button" className="qty-btn">
                             +
                           </button>
                         </div>
@@ -283,7 +283,7 @@ const Cart = () => {
                 </ul>
                 <div>
                   <button className="btn btn-success w-100 my-3 d-flex justify-content-between">
-                    Go to Checkout <span class="fw-bold">$67.00</span>
+                    Go to Checkout <span className="fw-bold">$67.00</span>
                   </button>
                 </div>
                 <p>
@@ -292,19 +292,19 @@ const Cart = () => {
                 </p>
                 <h2>Add Promo or Gift Card</h2>
                 <form action="">
-                  <label for="" class="form-label">
+                  <label for="" className="form-label">
                     Email address
                   </label>
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     id=""
                     name=""
                     placeholder="Promo or Gift Card"
                   ></input>
                   <button
                     type="submit"
-                    class="btn btn-outline-dark w-100 my-2 font-weight-normal"
+                    className="btn btn-outline-dark w-100 my-2 font-weight-normal"
                   >
                     Redeem
                   </button>

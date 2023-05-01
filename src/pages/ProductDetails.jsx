@@ -5,6 +5,7 @@ import productsubimgtwo from "../images/products/product-single-img-3.jpg";
 import productsubimgthree from "../images/products/product-single-img-4.jpg";
 import { Link } from "react-router-dom";
 import ProductList from "../components/ProductList";
+import FilterTabs from "../components/FilterTabs";
 
 const ProductDetails = () => {
   return (
@@ -39,11 +40,11 @@ const ProductDetails = () => {
                 <h2 className="pro-name">Napolitanke Ljesnjak</h2>
                 <div className="rating">
                   <div className="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star-half-stroke"></i>
                   </div>
                   <div className="review">(30 reviews)</div>
                 </div>
@@ -74,11 +75,11 @@ const ProductDetails = () => {
                   </button>
                 </div>
                 <button type="button" className="add-to-cart btn btn-success">
-                  <i class="fa-solid fa-bag-shopping"></i> Add to cart
+                  <i className="fa-solid fa-bag-shopping"></i> Add to cart
                 </button>
                 <hr />
                 <div className="product-sub-info">
-                  <table class="table table-borderless mb-0">
+                  <table className="table table-borderless mb-0">
                     <tbody>
                       <tr>
                         <td>Product Code:</td>
@@ -97,7 +98,7 @@ const ProductDetails = () => {
                         <td>
                           <small>
                             01 day shipping.
-                            <span class="text-muted">( Free pickup today)</span>
+                            <span className="text-muted">( Free pickup today)</span>
                           </small>
                         </td>
                       </tr>
@@ -109,6 +110,8 @@ const ProductDetails = () => {
           </div>
         </div>
       </section>
+
+      <FilterTabs />
       <section className="products-sec">
         <div className="container">
           <ProductList title="Related Products" />

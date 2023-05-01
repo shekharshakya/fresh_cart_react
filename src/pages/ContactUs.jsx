@@ -15,84 +15,84 @@ const ContactUs = () => {
               </p>
               <form action="">
                 <div className="row">
-                  <div class=" col-lg-6 mb-3">
-                    <label for="" class="form-label">
+                  <div className=" col-lg-6 mb-3">
+                    <label for="" className="form-label">
                       First Name
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id=""
                       name=""
                       placeholder="Enter Your First Name"
                     />
                   </div>
-                  <div class=" col-lg-6 mb-3">
-                    <label for="" class="form-label">
+                  <div className=" col-lg-6 mb-3">
+                    <label for="" className="form-label">
                       Last Name
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id=""
                       name=""
                       placeholder="Enter Your Last name"
                     />
                   </div>
-                  <div class=" col-lg-12 mb-3">
-                    <label for="" class="form-label">
+                  <div className=" col-lg-12 mb-3">
+                    <label for="" className="form-label">
                       Company
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id=""
                       name=""
                       placeholder="Your Company"
                     />
                   </div>
-                  <div class=" col-lg-12 mb-3">
-                    <label for="" class="form-label">
+                  <div className=" col-lg-12 mb-3">
+                    <label for="" className="form-label">
                       Title
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id=""
                       name=""
                       placeholder="Your Title"
                     />
                   </div>
-                  <div class=" col-lg-6 mb-3">
-                    <label for="" class="form-label">
+                  <div className=" col-lg-6 mb-3">
+                    <label for="" className="form-label">
                       Email
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id=""
                       name=""
                       placeholder="Enter Your Email"
                     />
                   </div>
-                  <div class=" col-lg-6 mb-3">
-                    <label for="" class="form-label">
+                  <div className=" col-lg-6 mb-3">
+                    <label for="" className="form-label">
                       Phone
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id=""
                       name=""
                       placeholder="Your Phone Number"
                     />
                   </div>
-                  <div class="col-lg-12 mb-3">
-                    <label for="" class="form-label">
+                  <div className="col-lg-12 mb-3">
+                    <label for="" className="form-label">
                       Comments
                     </label>
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       id=""
                       rows="3"
                       placeholder="Additional Comments"
