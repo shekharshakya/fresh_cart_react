@@ -5,8 +5,8 @@ import { GlobalProuctFilter } from "../context/ProductFilterContext";
 
 const Product = () => {
   const { isLoading, category } = GlobalProuctContext();
-  const { filterData } = GlobalProuctFilter();
- 
+  const { filterData, SelectValue } = GlobalProuctFilter();
+
   if (isLoading) {
     return <div className="text-center mt-5">Api Is Loading</div>;
   }
@@ -29,11 +29,18 @@ const Product = () => {
                     <i className="fa-sharp fa-regular fa-grid-round-4"></i>
                   </div>
                   <div className="sort-product">
-                    <select className="form-select">
-                      <option selected>Sort by: Featured</option>
+                    <select
+                      className="form-select"
+                      id="sort-Product-select"
+                      onChange={SelectValue}
+                    >
+                      <option selected hidden>
+                        Sort by: Featured
+                      </option>
                       <option value="Low to High">Price: Low to High</option>
                       <option value="High to Low"> Price: High to Low</option>
-                      <option value="Release Date"> Release Date</option>
+                      <option value="A - Z"> Sort: A - Z</option>
+                      <option value="Z - A"> Sort: Z - A</option>
                       <option value="Avg. Rating"> Avg. Rating</option>
                     </select>
                   </div>

@@ -28,11 +28,11 @@ const Home = () => {
               {category &&
                 category.map((curEle) => {
                   return (
-                    <div className="col-lg-3">
-                      <div className="category-box">
-                        <h3 className="category-name">{curEle}</h3>
-                      </div>
+                    // <div className="col-lg-3">
+                    <div className="category-box">
+                      <h3 className="category-name">{curEle}</h3>
                     </div>
+                    // </div>
                   );
                 })}
             </Slider>

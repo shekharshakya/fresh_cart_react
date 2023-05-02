@@ -7,19 +7,28 @@ const ProductFilterContext = createContext();
 const initialState = {
   filterData: [],
   allFilterData: [],
+  selectFilterValue: "",
+  selectedFilterData: [],
 };
 
 const ProductFilterProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { productData } = GlobalProuctContext();
 
+  const SelectValue = () => {
+    dispatch({ type: "select value" });
+  };
+
   useEffect(() => {
     dispatch({ type: "load Filter Data", payload: productData });
-    console.log(productData);
   }, [productData]);
 
+  useEffect(() => {
+    dispatch({ type: "Selected Value Filter Data", payload: productData });
+  }, [state.selectFilterValue]);
+
   return (
-    <ProductFilterContext.Provider value={state}>
+    <ProductFilterContext.Provider value={{ ...state, SelectValue }}>
       {children}
     </ProductFilterContext.Provider>
   );
