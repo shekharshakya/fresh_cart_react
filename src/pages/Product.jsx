@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProductCard from "../components/ProductCard";
+import { GlobalProuctContext } from "../context/ProductContext";
+import { GlobalProuctFilter } from "../context/ProductFilterContext";
 
 const Product = () => {
+  const { isLoading, category } = GlobalProuctContext();
+  const { filterData } = GlobalProuctFilter();
+ 
+  if (isLoading) {
+    return <div className="text-center mt-5">Api Is Loading</div>;
+  }
   return (
     <>
       <section className="product-sec sec-padding">
@@ -17,8 +25,8 @@ const Product = () => {
                 </div>
                 <div className="right-box">
                   <div className="product-grid-list">
-                  <i className="fa-solid fa-list"></i>
-                  <i className="fa-sharp fa-regular fa-grid-round-4"></i>
+                    <i className="fa-solid fa-list"></i>
+                    <i className="fa-sharp fa-regular fa-grid-round-4"></i>
                   </div>
                   <div className="sort-product">
                     <select className="form-select">
@@ -33,18 +41,14 @@ const Product = () => {
               </div>
 
               <div className="row">
-                <div className="col-lg-4 col-md-6 col-6">
-                  <ProductCard />
-                </div>
-                <div className="col-lg-4 col-md-6 col-6">
-                  <ProductCard />
-                </div>
-                <div className="col-lg-4 col-md-6 col-6">
-                  <ProductCard />
-                </div>
-                <div className="col-lg-4 col-md-6 col-6">
-                  <ProductCard />
-                </div>
+                {filterData &&
+                  filterData.map((curEle, index) => {
+                    return (
+                      <div className="col-lg-4 col-md-6 col-6">
+                        <ProductCard product={curEle} key={index} />
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           </div>

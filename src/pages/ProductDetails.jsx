@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import productmainimg from "../images/products/product-single-img-1.jpg";
 import productsubimgone from "../images/products/product-single-img-2.jpg";
 import productsubimgtwo from "../images/products/product-single-img-3.jpg";
 import productsubimgthree from "../images/products/product-single-img-4.jpg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ProductList from "../components/ProductList";
 import FilterTabs from "../components/FilterTabs";
+import { GlobalProuctContext } from "../context/ProductContext";
 
 const ProductDetails = () => {
+  const { GetProductDeatils } = GlobalProuctContext();
+  const { id } = useParams();
+  const { isLoading } = GlobalProuctContext();
+
+  const API = "https://dummyjson.com/products";
+
+  useEffect(() => {
+    // get product details
+    GetProductDeatils(`${API}/${id}`);
+  }, []);
+
+  if (isLoading) {
+    return <h3 className="text-center">Api is loading</h3>;
+  }
   return (
     <>
       <section className="product-details-sec sec-padding">
@@ -98,7 +113,9 @@ const ProductDetails = () => {
                         <td>
                           <small>
                             01 day shipping.
-                            <span className="text-muted">( Free pickup today)</span>
+                            <span className="text-muted">
+                              ( Free pickup today)
+                            </span>
                           </small>
                         </td>
                       </tr>

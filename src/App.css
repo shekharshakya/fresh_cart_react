@@ -85,6 +85,20 @@ header .header-cover nav ul li a {
   font-weight: 500;
 }
 
+.feature-sec .category-box {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 12px 0px;
+}
+.feature-sec .category-box h3 {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.feature-sec .slick-slide {
+  margin: 6px;
+}
+
 /* offer-sec */
 .offer-box {
   padding: 10px;
@@ -101,7 +115,7 @@ header .header-cover nav ul li a {
 }
 
 .offer-box .offer-content p {
-  font-size: .84em;
+  font-size: 0.84em;
   font-weight: 500;
 }
 
@@ -178,6 +192,9 @@ header .header-cover nav ul li a {
 
 /* product-top-header */
 /* product Card */
+.product-box {
+  height: 100%;
+}
 .product-card .product-box {
   border: 1px solid #dfe2e1;
   border-radius: 10px;
@@ -185,18 +202,23 @@ header .header-cover nav ul li a {
   padding: 10px;
   transition: 0.1s ease-in;
   position: relative;
+  height: 100%;
 }
 
 .product-card:hover .product-box {
   border: 1px solid #198754;
 }
-
+.product-card .product-box .product-img {
+  height: 240px;
+}
 .product-card .product-box .product-img img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .product-card .product-box .product-info .product-category {
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   color: #889397;
   font-weight: 500;
 }
@@ -367,7 +389,7 @@ header .header-cover nav ul li a {
   outline: none;
   border: none;
   background: transparent;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #000;
 }
 
