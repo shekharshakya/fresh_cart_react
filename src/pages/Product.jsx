@@ -46,7 +46,6 @@ const Product = () => {
                   </div>
                 </div>
               </div>
-
               <div className="row">
                 {filterData &&
                   filterData.map((curEle, index) => {

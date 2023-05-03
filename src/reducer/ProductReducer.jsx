@@ -15,15 +15,11 @@ const ProductReducer = (state, action) => {
       };
 
     case "is Product data Load":
-      let categories = action.payload.map((curEle) => {
-        return curEle.category;
-      });
-      categories = [...new Set(categories)];
+  
 
       return {
         isLoading: false,
         isError: false,
-        category: categories,
         productData: action.payload,
       };
 

@@ -1,42 +1,17 @@
 import React from "react";
-import ProductList from "../components/ProductList";
 import clock from "../images/icons/clock.svg";
 import gift from "../images/icons/gift.svg";
 import packahe from "../images/icons/package.svg";
 import refresh from "../images/icons/refresh-cw.svg";
-import { GlobalProuctContext } from "../context/ProductContext";
-import Slider from "react-slick";
 
 const Home = () => {
-  const { category } = GlobalProuctContext();
-  var settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-  };
-
+ 
   return (
     <>
       <section className="feature-sec sec-padding">
         <div className="container">
           <h2 className="title">Featured Categories</h2>
-          <div className="row">
-            <Slider {...settings}>
-              {category &&
-                category.map((curEle) => {
-                  return (
-                    // <div className="col-lg-3">
-                    <div className="category-box">
-                      <h3 className="category-name">{curEle}</h3>
-                    </div>
-                    // </div>
-                  );
-                })}
-            </Slider>
-          </div>
+         
         </div>
       </section>
 

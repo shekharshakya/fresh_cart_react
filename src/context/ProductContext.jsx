@@ -9,7 +9,6 @@ const API = "https://dummyjson.com/products";
 const initialState = {
   isLoading: false,
   isError: false,
-  category: [],
   productData: [],
 };
 
