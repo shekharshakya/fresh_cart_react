@@ -5,7 +5,17 @@ import { GlobalProuctFilter } from "../context/ProductFilterContext";
 
 const Product = () => {
   const { isLoading, category } = GlobalProuctContext();
-  const { filterData, SelectValue } = GlobalProuctFilter();
+  const { filterData, allFilterData, SelectValue } = GlobalProuctFilter();
+
+  const getUniqueData = (data, properties) => {
+    let newData = data?.map((curEle) => {
+      return curEle[properties]
+    })
+    return (newData = [...new Set(newData)])
+  }
+  const categoryOnlyData = getUniqueData(allFilterData, "category")
+
+  const brandOnlyData = getUniqueData(allFilterData, "brand")
 
   if (isLoading) {
     return <div className="text-center mt-5">Api Is Loading</div>;
@@ -15,7 +25,30 @@ const Product = () => {
       <section className="product-sec sec-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">filter section</div>
+            <div className="col-lg-3">
+              <div className="filter-sec">
+                <div className="filter-box">
+                  <h4 className="filter-title">Categories</h4>
+                  <div className="filter-list">
+                    {
+                      categoryOnlyData.map((curELe, index) => {
+                        return <button type="button" name="category" className="filter-item" value={curELe} key={index}>{curELe}</button>
+                      })
+                    }
+                  </div>
+                </div>
+                <div className="filter-box">
+                  <h4 className="filter-title">Brands</h4>
+                  <div className="filter-list">
+                    {
+                      brandOnlyData.map((curELe, index) => {
+                        return <button type="button" name="category" className="filter-item" value={curELe} key={index}>{curELe}</button>
+                      })
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-9">
               <div className="product-top-header">
                 <div className="total-products">
