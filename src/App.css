@@ -232,6 +232,10 @@ header .header-cover nav ul li a {
 .product-card .product-box .product-info .product-name a:hover {
   color: #198754;
 }
+.product-card .product-box .product-info .rating i{
+  color: #ffc107;
+  font-size: .7rem;
+}
 
 .product-card .product-box .product-info .price-add {
   display: flex;

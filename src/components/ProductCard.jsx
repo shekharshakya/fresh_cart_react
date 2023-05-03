@@ -1,6 +1,7 @@
 import React from "react";
 import productimg from "../images/products/product-img-1.jpg";
 import { Link } from "react-router-dom";
+import Star from "./Star";
 
 const ProductCard = ({ product }) => {
   return (
@@ -17,6 +18,9 @@ const ProductCard = ({ product }) => {
                 <Link to={`/products-details/${product.id}`}>
                   {product.title}
                 </Link>
+              </div>
+              <div className="rating">
+              <Star star={product.rating}/>
               </div>
               <div className="price-add">
                 <p>
