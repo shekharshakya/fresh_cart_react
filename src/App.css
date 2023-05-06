@@ -271,9 +271,52 @@ header .header-cover nav ul li a {
 /* product Card */
 
 /* filter-sec */
-.filter-sec .filter-box{
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #397524 #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+.filter-sec::-webkit-scrollbar {
+  width: 4px;
+}
+.filter-sec::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+.filter-sec::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+.filter-sec::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #397524;
+}
+
+.filter-sec::-webkit-scrollbar-thumb:hover {
+  background-color: #62A34B;
+}
+
+.filter-sec::-webkit-scrollbar-thumb:active {
+  background-color: #62A34B;
+}
+
+.filter-sec {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.filter-sec .filter-box {
   margin-bottom: 18px;
 }
+
 .filter-sec .filter-title {
   font-size: 1.1rem;
   font-weight: 500;
@@ -292,8 +335,12 @@ header .header-cover nav ul li a {
   font-size: .9rem;
 }
 
-.filter-sec .filter-item.active{
+.filter-sec .filter-item.active {
   color: #198754;
+}
+
+.filter-sec .filter-box .form-check {
+  font-size: .9rem;
 }
 
 /* product details section */
@@ -544,6 +591,18 @@ header .header-cover nav ul li a {
   body {
     font-size: 14px;
   }
+
+  header .top-header nav {
+    display: none;
+  }
+
+  .product-sec.sec-padding .filter-sec {
+    display: none;
+  }
+
+  .product-top-header {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -553,5 +612,9 @@ header .header-cover nav ul li a {
 
   .rp {
     padding-right: 0px;
+  }
+
+  .product-top-header .right-box .product-grid-list {
+    display: none;
   }
 }

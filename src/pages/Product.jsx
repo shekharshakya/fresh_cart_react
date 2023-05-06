@@ -25,7 +25,7 @@ const Product = () => {
       <section className="product-sec sec-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-4">
               <div className="filter-sec">
                 <div className="filter-box">
                   <h4 className="filter-title">Categories</h4>
@@ -42,14 +42,20 @@ const Product = () => {
                   <div className="filter-list">
                     {
                       brandOnlyData.map((curELe, index) => {
-                        return <button type="button" name="category" className="filter-item" value={curELe} key={index}>{curELe}</button>
+                        // return <button type="button" name="category" className="filter-item" value={curELe} key={index}>{curELe}</button>
+                        return <div class="form-check">
+                          <input class="form-check-input" name="category" type="checkbox" value={curELe} id={index} />
+                          <label class="form-check-label" for={index}>
+                          {curELe}
+                          </label>
+                        </div>
                       })
                     }
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-9 col-md-8">
               <div className="product-top-header">
                 <div className="total-products">
                   <p className="mb-0">
@@ -83,7 +89,7 @@ const Product = () => {
                 {filterData &&
                   filterData.map((curEle, index) => {
                     return (
-                      <div className="col-lg-4 col-md-6 col-6">
+                      <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <ProductCard product={curEle} key={index} />
                       </div>
                     );
