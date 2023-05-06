@@ -71,6 +71,11 @@ header .header-cover {
   padding: 10px 0px;
 }
 
+header .header-cover .logo {
+  width: 100%;
+  max-width: 130px;
+}
+
 header .header-cover nav ul {
   padding-left: 0px;
   margin-bottom: 0px;
@@ -84,6 +89,89 @@ header .header-cover nav ul li a {
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+header .header-cover .open-menu {
+  display: none;
+}
+
+header .header-cover .open-menu .button {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* side menu  */
+.side-menu-area {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.side-menu-area .side-menu-box {
+  width: 280px;
+  /* background-color: #1399fc; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  transform: translateX(280px);
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.side-menu-area .side-menu-box .side-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #889397;
+  padding: 10px;
+}
+.side-menu-area .overlay{
+position: relative;
+z-index: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+opacity: 0;
+transition: 0.3s ease;
+}
+.side-menu-area.active .overlay{
+  opacity: 1;
+}
+
+.side-menu-area .side-menu-box .side-menu .close-btn{
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: end;
+  color: #fff;
+}
+
+.side-menu-area .side-menu-box .side-menu .logo{
+  width: 160px;
+  margin: 16px auto;
+}
+
+.side-menu-area .side-menu-box .side-menu nav ul li{
+  padding: 4px 0px;
+}
+.side-menu-area .side-menu-box .side-menu nav ul li a{
+  color: #ffff;
+}
+.side-menu-area.active {
+  pointer-events: all;
+}
+
+.side-menu-area.active .side-menu-box {
+  transform: translateX(-1px);
+}
+
+/* side menu  */
 
 .feature-sec .category-box {
   border: 1px solid lightgray;
@@ -282,6 +370,7 @@ header .header-cover nav ul li a {
 .filter-sec::-webkit-scrollbar {
   width: 4px;
 }
+
 .filter-sec::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: #DFE9EB;
@@ -594,6 +683,10 @@ header .header-cover nav ul li a {
 
   header .top-header nav {
     display: none;
+  }
+
+  header .header-cover .open-menu {
+    display: block;
   }
 
   .product-sec.sec-padding .filter-sec {

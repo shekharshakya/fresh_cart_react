@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ProductCard from "../components/ProductCard";
 import { GlobalProuctContext } from "../context/ProductContext";
 import { GlobalProuctFilter } from "../context/ProductFilterContext";
 
 const Product = () => {
-  const { isLoading, category } = GlobalProuctContext();
+  const { isLoading} = GlobalProuctContext();
   const { filterData, allFilterData, SelectValue } = GlobalProuctFilter();
 
   const getUniqueData = (data, properties) => {
